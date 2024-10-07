@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function testResult(form){
+            var username = form.username.value;
+            alert("You Registered:" + unsername + " , ");
+
+        }
+    </script>
+</head>
+<body>
+    <h1> Moggybook!</h1>
+    
+    <form>
+        <table border="0" cellspacing = "5" cellpadding="5">
+            <tr>
+                <td>Username:</td>
+                <td>
+                    <input type="textarea" name="username">
+            
+                </td>
+            </tr>
+            <tr>
+                <td> *** element label *** </td>
+                <td> *** element input *** </td>
+
+            </tr>
+        </table>
+        <input type="submit" name="submit" value="Submit" onclick="testResult(this.form)" />
+        
+    </form>
+    
+</body>
+</html>
