@@ -46,4 +46,3 @@ var quest = req.body.quest;
  res.send("Hi "+name+" I am sure you will "+quest) ;
 });
 
-app.use(express.urlencoded({extended:true}))
