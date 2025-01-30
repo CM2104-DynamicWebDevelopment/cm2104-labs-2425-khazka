@@ -47,3 +47,8 @@ var quest = req.body.quest;
 });
 
 app.use(express.urlencoded({extended:true}))
+
+app.get(`/user/:userID/books/:bookid`, function(req, res){
+    var userID = req.params.userID;
+    var bookID = req.params.bookID; 
+    });
