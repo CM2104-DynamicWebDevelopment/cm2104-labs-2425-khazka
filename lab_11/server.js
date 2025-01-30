@@ -30,3 +30,5 @@ if(operator === "add"){
 }else{
     res.send(x+ " : "+ y+" = "+ (x/y));
 }});
+
+app.use(express.static('public'));
