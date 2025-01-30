@@ -12,7 +12,7 @@ app.get('/test', function(req, res){
    app.get('/add', function(req, res){
     var x = req.query.x;
     var y = req.query.y;
-     res.send("X + Y="+(x+y));
+     res.send("X + Y="+parseInt(x + y));
     });
 
 
@@ -22,7 +22,7 @@ var y = req.query.y;
 var operator = req.query.operator;
 
 if(operator === "add"){
-    res.send(x+ " + "+ y+" = "+ (x+=y));
+    res.send(x+ " + "+ y+" = "+ (x+y));
 }else if(operator === "sub"){
     res.send(x+ " - "+ y+" = "+ (x-y));
 }else if(operator === "mul"){
