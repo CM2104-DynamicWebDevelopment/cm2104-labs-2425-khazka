@@ -10,15 +10,15 @@ app.get('/test', function(req, res){
    });
 
    app.get('/add', function(req, res){
-    var x = req.query.x;
-    var y = req.query.y;
-     res.send("X + Y="+parseInt(x + y));
+    var x = parseInt(req.query.x);
+    var y = parseInt(req.query.y);
+     res.send("X + Y="+(x+y));
     });
 
 
 app.get('/calc', function(req,res){
-var x = req.query.x;
-var y = req.query.y;
+var x = parseInt(req.query.x);
+var y = parseInt(req.query.y);
 var operator = req.query.operator;
 
 if(operator === "add"){
