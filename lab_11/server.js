@@ -14,3 +14,18 @@ app.get('/test', function(req, res){
     var y = req.query.y;
      res.send("X + Y="+(x+y));
     });
+
+app.get('/calc', function(req,res){
+var x = req.query.x;
+var y = req.query.y;
+var operator = req.query.operator;
+
+if(operator === "add"){
+    res.send(x+ " + "+ y+" = "+ (x+y));
+}else if(operator === "sub"){
+    res.send(x+ " - "+ y+" = "+ (x-y));
+}else if(operator === "mul"){
+    res.send(x+ " x "+ y+" = "+ (x*y))
+}else{
+    res.send(x+ " : "+ y+" = "+ (x/y));
+}});
