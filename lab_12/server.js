@@ -1,8 +1,16 @@
 var express = require('express');
 var app = express();
+ app.use(express.static('public'))
+ app.get('/'
+, function(req, res){
+ res.send("Hello world! by express");
+});
+
+
+var express = require('express');
+var app = express();
 var spotifyWebApi = require('spotify-web-api-node');
-const { Client } = require('undici-types');
-app.use(express.static('public'))
+app.use(express.static('public'));
 
 var spotifyApi = new spotifyWebApi({
     clientId: 'e88563bf22f74b749ee0b9c63fe245a8',
